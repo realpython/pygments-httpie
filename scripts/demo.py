@@ -18,7 +18,7 @@ def pprint(code: str) -> None:
     )
 
 
-code = '''\
+code = """\
 GET /myapp/ HTTP/1.1
 Accept: */*
 Accept-Encoding: gzip, deflate
@@ -38,7 +38,7 @@ X-Frame-Options: DENY
 <html lang="en-US">
   <head><meta charset="utf-8"><title>My secure app</title></head>
   <body><p>Now this is some sweet HTML!</p></body>
-</html>'''
+</html>"""
 
 
 if __name__ == "__main__":
