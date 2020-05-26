@@ -60,6 +60,6 @@ class HttpLexer(RegexLexer):
                 r"(<!DOCTYPE)(\s+)([^>\s]+)([\[\]>])",
                 bygroups(Keyword, Text, Name.Tag, Keyword),
             ),
-            (r".*\n", using(HtmlLexer)),
+            (r".*[\n\r]+", using(HtmlLexer)),
         ],
     }
