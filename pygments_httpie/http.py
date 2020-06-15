@@ -10,6 +10,7 @@ import re
 
 from pygments.lexer import RegexLexer, bygroups, using
 from pygments.lexers.html import HtmlLexer
+from pygments.lexers.shell import BashSessionLexer
 from pygments.token import Keyword, Name, Number, Operator, String, Text
 
 
@@ -22,6 +23,7 @@ class HttpLexer(RegexLexer):
 
     tokens = {
         "root": [
+            (r"^\$.*[\n\r]+", using(BashSessionLexer)),
             (
                 r"([A-Z]+)( +)([^ ]+)( +)(HTTP)(/)(\d+\.\d+)",
                 bygroups(

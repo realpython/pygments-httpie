@@ -19,6 +19,7 @@ def pprint(code: str) -> None:
 
 
 code = """\
+$ GET :8000/myapp
 GET /myapp/ HTTP/1.1
 Accept: */*
 Accept-Encoding: gzip, deflate
