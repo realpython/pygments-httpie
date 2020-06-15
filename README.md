@@ -10,4 +10,4 @@ The `httpie` license is included in the root of this repository.
 
 Sample output:
 
-![Output](output-example.jpg "output")
+![Output](https://github.com/realpython/pygments-httpie/blob/master/output-example.jpg "output")
