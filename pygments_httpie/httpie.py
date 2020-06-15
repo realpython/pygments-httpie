@@ -4,7 +4,7 @@ Author: Brad Solomon <bsolomon@protonmail.com>
 Taken heavily from httpie/output/formatters/colors.py.
 """
 
-__all__ = ["HttpLexer"]
+__all__ = ["HttpieLexer"]
 
 import re
 
@@ -14,7 +14,7 @@ from pygments.lexers.shell import BashSessionLexer
 from pygments.token import Keyword, Name, Number, Operator, String, Text
 
 
-class HttpLexer(RegexLexer):
+class HttpieLexer(RegexLexer):
     """Lexer for stdout from `httpie`."""
 
     name = "httpie"
