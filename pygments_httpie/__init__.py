@@ -1,1 +1,1 @@
-from pygments_httpie.http import HttpLexer  # noqa
+from pygments_httpie.httpie import HttpieLexer  # noqa
